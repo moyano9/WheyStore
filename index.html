@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WHEYSTORE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="cabecera">
+    <div class="contenedor cabecera__interior">
+      <a href="index.html" class="marca">
+        <span class="marca__texto">WHEYSTORE</span>
+      </a>
+      <nav aria-label="principal">
+        <ul class="nav__lista">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="cabecera__iconos">
+        <a href="#" aria-label="Carrito">🛒</a>
+        <a href="#" aria-label="Perfil">👤</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="portada">
+      <div class="contenedor portada__interior">
+        <!--Logo grande en la portada -->
+        <div class="portada__logo">
+          <img src="assets/logo.png" alt="WHEYSTORE">
+        </div>
+
+        <!-- Texto/estadísticas/buscador -->
+        <div class="portada__info">
+          <h1>Nutrición deportiva para alcanzar tu máximo rendimiento</h1>
+          <div class="portada__estadisticas">
+            <div><b>50+</b><span>Suplementos</span></div>
+            <div><b>100+</b><span>Clientes satisfechos</span></div>
+          </div>
+          <form class="buscador" action="tienda.html">
+            <input type="search" placeholder="¿Qué estás buscando?" aria-label="Buscar productos">
+            <button type="submit" aria-label="Buscar">🔎</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destacados -->
+
+    <section class="destacado contenedor">
+      <div class="destacado__medio"><img src="assets/bcaa.png" alt="Producto destacado"></div>
+      <div class="destacado__info">
+        <h2 class="acento">Producto Destacado</h2>
+        <p>Presentamos el nuevo <b>BCAA 5000 Powder</b>: combinación de aminoácidos esenciales para mejorar fuerza,
+          resistencia y recuperación muscular.</p>
+      </div>
+    </section>
+
+    <section class="mas-vendidos contenedor">
+      <div class="mas-vendidos__intro">
+        <h3 class="acento pequeño">Nuestros más vendidos</h3>
+        <p>Descubre los suplementos favoritos para ganar fuerza y energía.</p>
+      </div>
+      <div class="mas-vendidos__rejilla">
+        <article class="producto-tarjeta">
+          <a href="producto.html"><img src="assets/whey.png" alt="Whey Protein 2 kg" class="producto-tarjeta__img"></a>
+          <h4><a href="producto.html">Whey Protein 2 kg</a></h4>
+          <p class="suave">Alta concentración y rápida absorción.</p>
+          <div class="precio">68.99 €</div>
+        </article>
+        <article class="producto-tarjeta">
+          <img src="assets/creatine.png" alt="Creatina 200 g" class="producto-tarjeta__img">
+          <h4>Creatina 200 g</h4>
+          <p class="suave">Mejora fuerza y rendimiento.</p>
+          <div class="precio">28.99 €</div>
+        </article>
+        <article class="producto-tarjeta">
+          <img src="assets/casein.png" alt="Caseína 1 kg" class="producto-tarjeta__img">
+          <h4>Caseína 1 kg</h4>
+          <p class="suave">Liberación lenta para la noche.</p>
+          <div class="precio">27.99 €</div>
+        </article>
+      </div>
+    </section>
+    <!-- SOBRE WHEYSTORE -->
+    <section class="sobre">
+      <div class="contenedor">
+        <h3 class="sobre__titulo">Sobre WHEYSTORE</h3>
+        <p class="sobre__texto">
+          En WHEYSTORE somos especialistas en nutrición deportiva. Ofrecemos productos de máxima calidad con fórmulas
+          diseñadas para ayudarte a ganar masa muscular, mejorar el rendimiento y acelerar la recuperación. Todos
+          nuestros suplementos están desarrollados con ingredientes premium y enviados desde España.
+        </p>
+
+        <div class="sobre__beneficios">
+          <article class="beneficio">
+            <div class="beneficio__icono">🏷️</div>
+            <h4>Amplio catálogo</h4>
+            <p class="suave">Más de 50 productos para todas las metas</p>
+          </article>
+          <article class="beneficio">
+            <div class="beneficio__icono">📦</div>
+            <h4>Envío rápido</h4>
+            <p class="suave">Entrega en 24–48h a toda España</p>
+          </article>
+          <article class="beneficio">
+            <div class="beneficio__icono">📞</div>
+            <h4>24/7 Atención personalizada</h4>
+            <p class="suave">Soporte técnico y nutricional 24/7.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- OPINIONES -->
+    <section class="opiniones">
+      <div class="contenedor">
+        <h3 class="opiniones__titulo">Que opinan nuestros clientes de WHEYSTORE?</h3>
+
+        <article class="opiniones__tarjeta">
+          <blockquote>
+            Llevo 2 meses usando la Whey de WHEYSTORE y los resultados son increíbles.
+            Más energía, más fuerza y mejor recuperación.
+          </blockquote>
+          <div class="opiniones__meta">
+            <div class="persona">
+              <img src="assets/user1.png" alt="Carlos G." class="avatar">
+              <div><b>Carlos G.</b><span class="suave" style="display:block">Deportista</span></div>
+            </div>
+            <div class="valoracion">★ 4.5</div>
+          </div>
+        </article>
+
+        <article class="opiniones__tarjeta">
+          <blockquote>
+            La mejor creatina que he probado. Se disuelve muy bien y el envío fue rapidísimo.
+          </blockquote>
+          <div class="opiniones__meta">
+            <div class="persona">
+              <img src="assets/user2.png" alt="Javier J." class="avatar">
+              <div><b>Javier J.</b><span class="suave" style="display:block">Youtuber</span></div>
+            </div>
+            <div class="valoracion">★ 4.8</div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="pie">
+    <div class="contenedor pie__interior">
+      <div class="pie__marca">
+        <img src="assets/logo.png" alt="WHEYSTORE" class="pie__logo">
+        <div class="pie__nombre">WHEYSTORE</div>
+        <div class="redes">
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="TikTok">🎵</a>
+          <a href="#" aria-label="YouTube">▶️</a>
+        </div>
+      </div>
+
+      <div class="pie__columnas">
+        <div class="pie__columna">
+          <h5>Información</h5>
+          <a href="#">Sobre nosotros</a>
+          <a href="tienda.html">Productos</a>
+          <a href="#">Consejos y guías</a>
+        </div>
+        <div class="pie__columna">
+          <h5>Empresa</h5>
+          <a href="#">Comunidad fitness</a>
+          <a href="#">Trabaja con nosotros</a>
+          <a href="#">Nuestra historia</a>
+        </div>
+        <div class="pie__columna">
+          <h5>Contacto y Ayuda</h5>
+          <a href="#">Envíos y devoluciones</a>
+          <a href="#">Precios y métodos de pago</a>
+          <a href="#">Centro de ayuda</a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="contenedor">2025 · Todos los derechos reservados · Términos de uso · WHEYSTORE</div>
+    </div>
+  </footer>
+</body>
+
+</html>
