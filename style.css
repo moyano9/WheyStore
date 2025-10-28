@@ -13,7 +13,7 @@
 body {
     margin: 0;
     font-family: "Poppins", sans-serif;
-    background: #3a3a3a;
+    background: #1e1e1e;
     color: #e9e9e9;
     line-height: 1.6
 }
@@ -351,6 +351,7 @@ a {
     font-weight: 700
 }
 
+
 /* Tienda */
 
 .tienda__cabecera {
@@ -426,13 +427,41 @@ a {
 }
 
 .btn-comprar:hover {
-    filter: brightness(1.15)
+    filter: brightness(1.15);
+    border-color: #e59044;
+    box-shadow: #0002;
+    transform: translateY(-1px);
 }
 
 .ficha__precio {
     font-size: 2rem;
     font-weight: 800;
     text-align: right
+}
+
+.ficha__acciones {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: .75rem;
+    flex-wrap: wrap;
+    /* evita solapes en pantallas pequeñas */
+}
+
+.ficha__acciones .btn-comprar {
+    white-space: nowrap;
+    /* el botón no parte en dos líneas */
+}
+
+.ficha__acciones .ficha__precio {
+    margin: 0;
+    font-size: 1.6rem;
+    /* ajusta si prefieres más grande/pequeño */
+    font-weight: 800;
+    color: #ddd;
+    /* acento; puedes usar #e59044 si lo ves mejor */
+    text-align: left;
+    /* anula el 'text-align: right' previo */
 }
 
 .ficha__descripcion {
@@ -458,10 +487,10 @@ a {
 
 /* Opiniones */
 
-/* Sobre WHEYSTORE (franja clara) */
+/* Sobre WHEYSTORE */
 .sobre {
-    background: #efefef;
-    color: #222;
+    background: #242424;
+    color: #ddd;
     padding: 2rem 0;
     border-top: 1px solid #00000010;
     border-bottom: 1px solid #00000010;
@@ -478,7 +507,7 @@ a {
     max-width: 80ch;
     margin: 0 auto 1.2rem auto;
     text-align: center;
-    color: #444;
+    color: #cfcfcf;
 }
 
 .sobre__beneficios {
@@ -490,8 +519,8 @@ a {
 
 .beneficio {
     flex: 1 1 280px;
-    background: #fff;
-    border: 1px solid #00000014;
+    background: #2e2e2e;
+    border: 1px solid #00000026;
     border-radius: 12px;
     padding: 1rem;
     text-align: center;
@@ -502,7 +531,7 @@ a {
     height: 48px;
     margin: 0 auto .5rem auto;
     border-radius: 12px;
-    background: #ffe4cc;
+    background: #3a3a3a;
     display: grid;
     place-items: center;
     font-size: 1.2rem;
@@ -510,8 +539,8 @@ a {
 
 /* Opiniones (tarjetas oscuras) */
 .opiniones {
-    background: #fff;
-    color: #222;
+    background: #242424;
+    color: #ddd;
     padding: 2rem 0
 }
 
@@ -631,6 +660,30 @@ a {
     font-size: .9rem
 }
 
+/*licencia comons*/
+
+.licencia-cc {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+.licencia-cc a {
+    color: #ff7a00;
+    text-decoration: none;
+}
+
+.licencia-cc a:hover {
+    text-decoration: underline;
+}
+
+.licencia-cc img {
+    margin-bottom: 0.5rem;
+    height: 31px;
+}
+
 
 /* Responsive */
 
@@ -652,7 +705,18 @@ a {
     }
 
     .ficha {
-        flex-direction: column
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ficha__info {
+        align-items: center;
+    }
+
+    .ficha__medio img {
+        max-width: 320px;
+        /* evita que la imagen se haga demasiado grande */
     }
 
     .opiniones__tarjeta {
