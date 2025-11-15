@@ -516,6 +516,19 @@ a {
     flex-wrap: wrap;
     justify-content: center;
 }
+.sobre__video {
+  margin-top: 2rem;
+  margin-bottom: 2rem;   
+  display: flex;
+  justify-content: center;
+}
+
+.sobre__video video {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 14px;
+  border: 2px solid #0003;
+}
 
 .beneficio {
     flex: 1 1 280px;
