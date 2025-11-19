@@ -696,6 +696,30 @@ a {
     margin-bottom: 0.5rem;
     height: 31px;
 }
+.audio_zona {
+  margin: 1.5rem auto 2rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+.audio_zona audio {
+  display: none; /* ocultamos el reproductor nativo */
+}
+
+.boton_audio {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: .6rem 1.2rem;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+}
+
+.boton_audio:hover {
+  filter: brightness(1.15);
+}
 
 
 /* Responsive */

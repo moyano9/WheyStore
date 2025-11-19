@@ -15,25 +15,25 @@
 </head>
 
 <body>
- <header class="cabecera">
-  <div class="contenedor cabecera__interior">
-    <a href="index.html" class="marca">
-      <span class="marca__texto">WHEYSTORE</span>
-    </a>
-    <nav aria-label="principal">
-      <ul class="nav__lista">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="tienda.html">Tienda</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-    
-    <div class="cabecera__iconos">
-      <a href="#" aria-label="Carrito">🛒</a>
-      <a href="#" aria-label="Perfil">👤</a>
+  <header class="cabecera">
+    <div class="contenedor cabecera__interior">
+      <a href="index.html" class="marca">
+        <span class="marca__texto">WHEYSTORE</span>
+      </a>
+      <nav aria-label="principal">
+        <ul class="nav__lista">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="cabecera__iconos">
+        <a href="#" aria-label="Carrito">🛒</a>
+        <a href="#" aria-label="Perfil">👤</a>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
   <main>
     <section class="portada">
       <div class="contenedor portada__interior">
@@ -45,7 +45,21 @@
         <!-- Texto/estadísticas/buscador -->
         <div class="portada__info">
           <h1>Nutrición deportiva para alcanzar tu máximo rendimiento</h1>
-          <audio class="audio-header" src="assets/audio/audio.mp3" controls></audio>
+
+
+          <!----------------Audio------------------------>
+          <div class="audio_zona contenedor">
+            <button id="boton_audio" class="boton_audio" type="button">
+              ▶ Música Ambiente
+            </button>
+
+            <audio id="audio_fondo">
+              <source src="assets/audio/audio.mp3" type="audio/mp3">
+              Tu navegador no soporta audio.
+            </audio>
+          </div>
+
+
           <div class="portada__estadisticas">
             <div><b>50+</b><span>Suplementos</span></div>
             <div><b>100+</b><span>Clientes satisfechos</span></div>
@@ -61,7 +75,8 @@
     <!-- Destacados -->
 
     <section class="destacado contenedor">
-      <div class="destacado__medio"><a href="producto.html"><img src="assets/bcaa.png" alt="Producto destacado"></div></a>
+      <div class="destacado__medio"><a href="producto.html"><img src="assets/bcaa.png" alt="Producto destacado"></div>
+      </a>
       <div class="destacado__info">
         <h2 class="acento"><a href="producto.html">Producto Destacado</h2></a>
         <p>Presentamos el nuevo <b>BCAA 5000 Powder</b>: combinación de aminoácidos esenciales para mejorar fuerza,
@@ -106,8 +121,8 @@
         </p>
 
         <div class="sobre__video">
-      <video src="assets/video/videoWheyStore.mp4" controls></video>
-    </div>
+          <video src="assets/video/videoWheyStore.mp4" controls></video>
+        </div>
 
         <div class="sobre__beneficios">
           <article class="beneficio">
@@ -173,17 +188,17 @@
           <a href="#" aria-label="TikTok">🎵</a>
           <a href="#" aria-label="YouTube">▶️</a>
         </div>
-         <div class="licencia-cc">
-  <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
-    <img alt="Licencia de Creative Commons" style="border-width:0; vertical-align:middle;"
-         src="https://licensebuttons.net/l/by-nc/4.0/88x31.png" />
-  </a>
-  <p>
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">
-      Licencia Creative Commons Atribución-NoComercial 4.0 Internacional
-    </a>.
-  </p>
-</div>
+        <div class="licencia-cc">
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+            <img alt="Licencia de Creative Commons" style="border-width:0; vertical-align:middle;"
+              src="https://licensebuttons.net/l/by-nc/4.0/88x31.png" />
+          </a>
+          <p>
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">
+              Licencia Creative Commons Atribución-NoComercial 4.0 Internacional
+            </a>.
+          </p>
+        </div>
       </div>
 
       <div class="pie__columnas">
@@ -207,8 +222,10 @@
         </div>
       </div>
     </div>
-   
+
   </footer>
+    
+    <script src="js.js"></script>
 </body>
 
 </html>
