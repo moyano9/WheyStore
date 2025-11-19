@@ -74,13 +74,53 @@
 
     <!-- Destacados -->
 
-    <section class="destacado contenedor">
-      <div class="destacado__medio"><a href="producto.html"><img src="assets/bcaa.png" alt="Producto destacado"></div>
-      </a>
+    <a href="producto.html" class="destacado contenedor destacado--enlace">
+      <div class="destacado__medio">
+        <img src="assets/bcaa.png" alt="Producto destacado">
+      </div>
+
       <div class="destacado__info">
-        <h2 class="acento"><a href="producto.html">Producto Destacado</h2></a>
-        <p>Presentamos el nuevo <b>BCAA 5000 Powder</b>: combinación de aminoácidos esenciales para mejorar fuerza,
-          resistencia y recuperación muscular.</p>
+        <h2 class="acento">Recién Llegado</h2>
+        <p>
+          Presentamos el nuevo <b>BCAA 5000 Powder</b>: combinación de aminoácidos
+          esenciales para mejorar fuerza, resistencia y recuperación muscular.
+        </p>
+      </div>
+    </a>
+
+    <!-- CARRUSEL DE IMÁGENES CON ANIMACIÓN CSS -->
+    <section class="carrusel contenedor">
+      <h2 class="carrusel__titulo">Suplementos destacados</h2>
+
+      <div class="carrusel__ventana">
+
+        <!-- Diapositiva 1 -->
+        <a href="producto.html" class="carrusel__diapositiva carrusel__diapositiva--1">
+          <img src="assets/whey.png" alt="Whey Protein 2Kg">
+          <div class="carrusel__texto">
+            <h3>Whey Protein 2Kg</h3>
+            <p>Proteína de suero con un 80% de concentración y sabor espectacular.</p>
+          </div>
+        </a>
+
+        <!-- Diapositiva 2 -->
+        <a href="producto.html" class="carrusel__diapositiva carrusel__diapositiva--2">
+          <img src="assets/bcaa.png" alt="BCAA 500g">
+          <div class="carrusel__texto">
+            <h3>BCAA 500g</h3>
+            <p>Aminoácidos esenciales para acelerar tu recuperación muscular.</p>
+          </div>
+        </a>
+
+        <!-- Diapositiva 3 -->
+        <a href="producto.html" class="carrusel__diapositiva carrusel__diapositiva--3">
+          <img src="assets/creatine.png" alt="Creatina Monohidrato">
+          <div class="carrusel__texto">
+            <h3>Creatina Monohidrato</h3>
+            <p>Aumenta tu fuerza, rendimiento y potencia en cada entrenamiento.</p>
+          </div>
+        </a>
+
       </div>
     </section>
 
@@ -90,24 +130,31 @@
         <p>Descubre los suplementos favoritos para ganar fuerza y energía.</p>
       </div>
       <div class="mas-vendidos__rejilla">
-        <article class="producto-tarjeta">
-          <a href="producto.html"><img src="assets/whey.png" alt="Whey Protein 2 kg" class="producto-tarjeta__img"></a>
-          <h4><a href="producto.html">Whey Protein 2 kg</a></h4>
+
+        <!-- TARJETA 1 -->
+        <a href="producto.html" class="producto-tarjeta">
+          <img src="assets/whey.png" alt="Whey Protein 2 kg" class="producto-tarjeta__img">
+          <h4>Whey Protein 2 kg</h4>
           <p class="suave">Alta concentración y rápida absorción.</p>
           <div class="precio">68.99 €</div>
-        </article>
-        <article class="producto-tarjeta">
-          <a href="producto.html"><img src="assets/creatine.png" alt="Creatina 200 g" class="producto-tarjeta__img"></a>
-          <h4><a href="producto.html">Creatina 200 g</h4></a>
+        </a>
+
+        <!-- TARJETA 2 -->
+        <a href="producto.html" class="producto-tarjeta">
+          <img src="assets/creatine.png" alt="Creatina 200 g" class="producto-tarjeta__img">
+          <h4>Creatina 200 g</h4>
           <p class="suave">Mejora fuerza y rendimiento.</p>
           <div class="precio">28.99 €</div>
-        </article>
-        <article class="producto-tarjeta">
-          <a href="producto.html"><img src="assets/casein.png" alt="Caseína 1 kg" class="producto-tarjeta__img"></a>
-          <h4><a href="producto.html">Caseína 1 kg</h4></a>
+        </a>
+
+        <!-- TARJETA 3 -->
+        <a href="producto.html" class="producto-tarjeta">
+          <img src="assets/casein.png" alt="Caseína 1 kg" class="producto-tarjeta__img">
+          <h4>Caseína 1 kg</h4>
           <p class="suave">Liberación lenta para la noche.</p>
           <div class="precio">27.99 €</div>
-        </article>
+        </a>
+
       </div>
     </section>
     <!-- SOBRE WHEYSTORE -->
@@ -224,8 +271,8 @@
     </div>
 
   </footer>
-    
-    <script src="js.js"></script>
+
+  <script src="js.js"></script>
 </body>
 
 </html>
