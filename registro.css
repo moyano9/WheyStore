@@ -44,6 +44,18 @@ body {
 }
 
 /* ---------------------------
+   NAV MÓVIL ALINEADO A LA DERECHA
+---------------------------- */
+@media (max-width: 992px) {
+
+  /* La lista del menú se alinea a la derecha */
+  .navbar-whey .navbar-nav {
+    margin-left: auto;
+    text-align: right;
+  }
+}
+
+/* ---------------------------
    LOGO WHEYSTORE (ESTILO ORIGINAL MEJORADO)
 ---------------------------- */
 
