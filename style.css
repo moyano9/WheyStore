@@ -778,125 +778,81 @@ a {
     filter: brightness(1.15);
 }
 
-/* =======================
-   CARRUSEL DE IMÁGENES
-   ======================= */
 
+/* Sección carrusel */
 .carrusel {
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-    text-align: center;
-    /* centra el título */
+  padding: 2rem 0 2.5rem;
 }
 
 .carrusel__titulo {
-    color: #ff7a00;
-    margin-bottom: .8rem;
-    font-weight: 800;
+  text-align: center;
+  color: #ff7a00;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
+/* Ventana */
 .carrusel__ventana {
-    position: relative;
-    height: 260px;
-    border-radius: 16px;
-    overflow: hidden;
-    background: #4a4a4a;
-    border: 1px solid #0004;
+  overflow: hidden;
+  width: 100%;
 }
 
-/* Cada diapositiva ocupa toda la zona del carrusel */
-.carrusel__diapositiva {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: row;
-    /* imagen + texto lado a lado */
-    align-items: center;
-    justify-content: center;
-    /* CENTRAR TODO */
-    gap: 1.5rem;
-    padding: 1rem 1.5rem;
-    opacity: 0;
-    transform: translateX(20px);
-    animation: carrusel-pasar 15s infinite;
-    color: inherit;
-    text-decoration: none;
-    /* quitar subrayado */
-    cursor: pointer;
-    transition: .2s ease;
+/* Pista animada */
+.carrusel__pista {
+  display: flex;
+  width: max-content;
+  animation: carruselInfinito 35s linear infinite;
 }
 
-/* Hover en PC */
-.carrusel__diapositiva:hover {
-    background: rgba(255, 255, 255, 0.05);
-    transform: translateY(-3px) scale(1.01);
+/* Cada "tarjeta" del carrusel */
+.carrusel__item {
+  flex: 0 0 180px;      /* Tamaño idéntico para todos */
+  min-width: 180px;
+  height: 180px;        /*  CUADRADO PERFECTO */
+  margin-right: 1.5rem;
+    /* Fondo para que el PNG se vea bien */
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;        /* Separación interna */
 }
 
-/* Imagen del carrusel */
-.carrusel__diapositiva img {
-    width: 160px;
-    height: 160px;
-    object-fit: contain;
-    background: #d6d6d6;
-    border-radius: 14px;
+/* Todas las imágenes ajustadas IGUAL */
+.carrusel__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;   /* Hace que TODAS midan lo mismo sin deformarse */
 }
 
-/* Texto del carrusel */
-.carrusel__texto h3 {
-    margin: 0 0 .4rem 0;
-    color: #fff;
+/* Animación */
+@keyframes carruselInfinito {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
-.carrusel__texto p {
-    margin: 0;
-    color: #e0e0e0;
+/* Móvil */
+@media (max-width: 600px) {
+  .carrusel__item {
+    flex: 0 0 140px;
+    min-width: 140px;
+    height: 140px;
+    margin-right: 1rem;
+  }
+
+  .carrusel__titulo {
+    font-size: 1.6rem;
+  }
 }
 
-/* Orden de aparición (delays) */
-.carrusel__diapositiva--1 {
-    animation-delay: 0s;
-}
 
-.carrusel__diapositiva--2 {
-    animation-delay: 5s;
-}
 
-.carrusel__diapositiva--3 {
-    animation-delay: 10s;
-}
 
-/* Animación del carrusel */
-@keyframes carrusel-pasar {
-    0% {
-        opacity: 0;
-        transform: translateX(20px);
-    }
-
-    5% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-
-    30% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-
-    35% {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-
-    100% {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-}
 
 /* MÓVIL: imagen arriba, texto abajo */
 @media (max-width: 600px) {
     .carrusel__ventana {
-        height: 300px;
+        height: 120px;
         /* un poco más alto en móvil */
     }
 

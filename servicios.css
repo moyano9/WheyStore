@@ -1,0 +1,15 @@
+.card-link-wrapper {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.plan-card {
+  cursor: pointer;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 22px rgba(0,0,0,0.35);
+}

@@ -1,0 +1,90 @@
+body {
+  background: #111;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding-top: 80px;
+}
+
+/* NAVBAR (copiado tal cual del registro.css) */
+.navbar-whey {
+  background: #ff7a00 !important;
+  padding-top: .7rem;
+  padding-bottom: .7rem;
+}
+
+.bloque-whey {
+  background: #000;
+  color: #fff;
+  padding: .25rem .75rem;
+  border-radius: 14px;
+  font-weight: 900;
+}
+
+.texto-store {
+  color: #000;
+  font-weight: 900;
+}
+
+/* TITULOS */
+.titulo-pago {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #ff7a00;
+}
+
+.subtitulo-pago {
+  text-align: center;
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+/* CAJAS */
+.caja-resumen, .caja-form {
+  background: #1a1a1a;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Productos */
+.img-producto {
+  width: 55px;
+}
+
+/* Total */
+.total-pago strong {
+  font-size: 1.3rem;
+  color: #ff7a00;
+}
+
+/* Envío etiqueta */
+.envio {
+  background: #00c853;
+  margin-top: 10px;
+  font-size: .85rem;
+}
+
+/* FORMULARIO OSCURO */
+.form-dark {
+  background: #222 !important;
+  border: 1px solid #444;
+  color: white !important;
+}
+
+.form-dark:focus {
+  border-color: #ff7a00;
+  box-shadow: 0 0 0 3px rgba(255,122,0, .3);
+}
+
+/* Botón final */
+.btn-whey {
+  background: #ff7a00;
+  border: none;
+  padding: .8rem;
+  font-weight: 700;
+  border-radius: 50px;
+}
+
+.btn-whey:hover {
+  background: #ff8e1c;
+}
