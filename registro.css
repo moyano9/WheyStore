@@ -1,14 +1,4 @@
-/* ---------------------------
-   ESTILO GENERAL REGISTRO
----------------------------- */
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #222;
-    color: white;
-    margin: 0;
-    padding-top: 75px; /* espacio para el navbar fijo */
-}
 
 /* ---------------------------
    NAVBAR ESTILO WHEYSTORE
