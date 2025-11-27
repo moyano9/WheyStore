@@ -809,10 +809,16 @@ a {
     margin-right: 1rem;
   }
 
+
   .carrusel__titulo {
     font-size: 1.6rem;
   }
+  .carrusel__pista {
+    animation-duration: 55s;   /* prueba 55–60s hasta que te guste */
+  }
+
 }
+
 
 /* Responsive */
 
