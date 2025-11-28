@@ -6,18 +6,12 @@
   <title>Iniciar sesión - WHEYSTORE</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Misma fuente que en registro -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
-
-  <!-- Reutilizamos EXACTAMENTE el mismo CSS -->
-   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="registro.css">
-  <link rel="stylesheet" href="pago.css">
-  <link rel="stylesheet" href="servicios.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon_io/favicon.ico">
 </head>
 
 <body>
@@ -42,7 +36,6 @@
           <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
           <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
           <li class="nav-item"><a class="nav-link active" href="sesion.html">Iniciar sesión</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">🛒</a></li>
         </ul>
       </div>
 
@@ -103,30 +96,76 @@
       </div>
     </div>
   </section>
-<!-- Modal de inicio de sesión -->
-<div class="modal fade" id="modalLoginOk" tabindex="-1" aria-labelledby="modalLoginOkLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content" style="background:#1f1f1f; color:#fff; border-radius:12px;">
-      
-      <div class="modal-header border-0">
-        <h5 class="modal-title" id="modalLoginOkLabel">Inicio de sesión correcto ✅</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-      </div>
+  <!-- Modal de inicio de sesión -->
+  <div class="modal fade" id="modalLoginOk" tabindex="-1" aria-labelledby="modalLoginOkLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content" style="background:#1f1f1f; color:#fff; border-radius:12px;">
 
-      <div class="modal-body">
-        Has iniciado sesión correctamente en <b>WHEYSTORE</b>.
-        <br><br>
-        Ya puedes acceder a tu área de usuario, ver tus pedidos y continuar con tus compras.
-      </div>
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="modalLoginOkLabel">Inicio de sesión correcto ✅</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
 
-      <div class="modal-footer border-0">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <a href="index.html" class="btn btn-whey">Ir a la página principal</a>
-      </div>
+        <div class="modal-body">
+          Has iniciado sesión correctamente en <b>WHEYSTORE</b>.
+          <br><br>
+          Ya puedes acceder a tu área de usuario, ver tus pedidos y continuar con tus compras.
+        </div>
 
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <a href="index.html" class="btn btn-whey">Ir a la página principal</a>
+        </div>
+
+      </div>
     </div>
   </div>
-</div>
+  <footer class="pie">
+    <div class="contenedor pie__interior">
+      <div class="pie__marca">
+        <img src="assets/logo.png" alt="WHEYSTORE" class="pie__logo">
+        <div class="pie__nombre">WHEYSTORE</div>
+        <div class="redes">
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="TikTok">🎵</a>
+          <a href="#" aria-label="YouTube">▶️</a>
+        </div>
+        <div class="licencia-cc">
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+            <img alt="Licencia de Creative Commons" style="border-width:0; vertical-align:middle;"
+              src="https://licensebuttons.net/l/by-nc/4.0/88x31.png" />
+          </a>
+          <p>
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">
+              Licencia Creative Commons Atribución-NoComercial 4.0 Internacional
+            </a>.
+          </p>
+        </div>
+      </div>
+
+      <div class="pie__columnas">
+        <div class="pie__columna">
+          <h5>Información</h5>
+          <a href="#">Sobre nosotros</a>
+          <a href="tienda.html">Productos</a>
+          <a href="#">Consejos y guías</a>
+        </div>
+        <div class="pie__columna">
+          <h5>Empresa</h5>
+          <a href="#">Comunidad fitness</a>
+          <a href="#">Trabaja con nosotros</a>
+          <a href="#">Nuestra historia</a>
+        </div>
+        <div class="pie__columna">
+          <h5>Contacto y Ayuda</h5>
+          <a href="#">Envíos y devoluciones</a>
+          <a href="#">Precios y métodos de pago</a>
+          <a href="#">Centro de ayuda</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

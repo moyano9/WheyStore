@@ -1,0 +1,28 @@
+{
+  "name": "wheystore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js.js",
+  "scripts": {
+    "sass": "sass --watch scss/main.scss style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moyano9/WheyStore.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moyano9/WheyStore/issues"
+  },
+  "homepage": "https://github.com/moyano9/WheyStore#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  },
+  "devDependencies": {
+    "sass": "^1.94.2"
+  }
+}
